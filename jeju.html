@@ -8,6 +8,9 @@
 	img{
 	margin-right : 10px;
 	}
+	p{
+	margin-bottom : 30px;
+	}
 </style>
 
 
@@ -25,17 +28,27 @@
 	<h1>제주</h1>
 	<h2>Jeju</h2><br>
 	<p>
-		걸어 올라가는 게 그리 어렵지 않은 이 화산 분화구에서는 제주도의 멋진 풍광을 감상하실 수 있어요.<br>
-
-		짧게 "일출봉"이라고도 하는 성산일출봉은 그 웅장하고 아름다운 일출을 보기 위해 많은 제주도민과<br> 관광객들의 발길이 끊이지 않는 곳입니다.
-		예전에 화산이었던 이곳은 걸어서 어렵지 않게 올라가실 수<br> 있는데요, 하루 중 어느 때든 제주도와 주변 바다의 환상적인 풍광을 만끽하실 수 있지요.
-		쩍 벌어진<br> 분화구 옆에 자리를 잡고 동쪽을 향해 앉으면 바다 위로 서서히 솟아 오르는 붉은 태양을 만나시게<br> 되지요.
-		제주도의 동쪽 지역에 위치한 이 성산일출봉은 수십만 년 전에 바닷속 화산 활동으로 인해<br> 형성되었다고 해요.
-		높이는 182미터 정도라 오르기에 힘들지는 않아요.
+		섬 전체가 하나의 거대한 관광자원인 제주도.<br>
+		에메랄드빛 물빛이 인상적인 협재 해수욕장은 제주 대표 여행지며,<br>
+		 파도가 넘보는 주상절리와 바다 위 산책로인 용머리 해안은 제주<br>에서만
+		  볼 수 있는 천혜의 자연경관으로 손꼽힌다. 드라마 촬영지로<br> 알려진
+		   섭지코스는 꾸준한 사랑을 받고 있으며 한라봉과 흑돼지,<br> 은갈치 등은 제주를 
+		   대표하는 음식이다.
 	</p>
 	<input type = "submit" value ="일정만들기">
 
   </div>
+   <div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ad1993b68723ca5dbb61a8a0398a9525"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.4995, 126.5293),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
 
 
 </body>

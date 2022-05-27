@@ -9,7 +9,7 @@
 	margin-right : 10px;
 	}
 	p{
-	margin-bottom : 20px;
+	margin-bottom : 30px;
 	}
 </style>
 
@@ -26,21 +26,28 @@
 
 
 	<h1>속초</h1>
-	<h2>Sokcho</h2><br><br>
+	<h2>Sokcho</h2><br><br><br>
 	<p>
-		한국의 북동쪽에 위치한 속초는 아름다운 자연과 역사적인 중요성을 갖춘 곳이지요.
-		속초시는 산과 바다<br> 사이의 평화로운 환경에 자리하고 있지만, 불과 50km 거리에는
-		 북한과의 무장 경계지대가 있어요. <br>이러한 극단적인 대비가 많은 사람들이 이곳을 찾는
-		  매력이기도 하지요.
-		  많은 한국인은 언젠가 결국<br> 평화통일이 이루어지길 소원하고 있어요. 
-		  이러한 염원을 나타내는 기념물 중 하나가 바로 설악산<br> 국립공원 안의 신흥사 근처에 위치한 
-		  거대한 청동 불상인 통일대불입니다. 고요한 불교 정신과 공원의<br> 조용한 환경 덕분에 이곳은
-		   잔잔한 마음으로 명상을 즐기기에 더 없이 좋은 곳이지요.
+		약 50m 길이의 구름다리를 건너면 바다와 마주할 수 있는 속초 영금정.<br>
+		일출 명소로도 알려진 이곳은 동해안의 시원한 절경을 감상할 수 있는 최적의 장소이다.<br>
+	     옛날 항구의 고유 분위기는 사라졌지만, '새우튀김 골목'으로 재탄생한 대포항은 <br>
+	     여전히 속초 대표 방문 코스! 아바이 순대로 유명한 아바이마을도 빼놓을 수 없는 인기 여행지이다.
 		 
 	</p>
 	<input type = "submit" value ="일정만들기">
 
   </div>
+  <div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ad1993b68723ca5dbb61a8a0398a9525"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(38.1909, 128.5804),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
 
 
 </body>
