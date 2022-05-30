@@ -11,11 +11,26 @@
 	p{
 	margin-bottom : 15px;
 	}
+	
+	@font-face {
+   font-family: 'SUIT-ExtraLight';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+}
+ #fonts_in_my_computer {
+    font-family: 'SUIT-ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+ }	
 </style>
 
 
 </head>
 <body>
+<div id="fonts_in_my_computer">
   <div class="wrap">
 	<div style="float: left">
 	<img src="yeosu.jpg" alt="My Image" width="300" height="300"
@@ -26,17 +41,18 @@
 
 
 	<h1>여수</h1>
-	<h2>Yeosu</h2><br><br><br>
+	<h2>Yeosu</h2><br>
 	<p>
-		국제 해양관광의 중심 전남 여수시. 3천여 그루의 동백나무로 가득 찬 붉은 섬 오동도는
-		 웰빙 트래킹<br> 코스를 갖추고 있어 한층 더 운치 있다. 해상 케이블카를 타면 마치 바다 위를
-		  걷는 듯한 느낌이 들며<br>탁 트인 바다 전망을 감상할 수 있다. 노래 가사에도 나오는 낭만적이고
-		   황홀한 여수의 밤바다는 <br>돌산대교와 음악분수가 함께 어우러져 멋진 야경을 선사한다. 
-		   공식 밥도둑 게장백반과 돌산 갓김치,<br> 갈치조림 등 풍부한 먹거리까지 갖춘 인기 만점 관광지!
+		국제 해양관광의 중심 전남 여수시.<br> 3천여 그루의 동백나무로 가득 찬 붉은 섬 오동도는
+		 웰빙 트래킹<br> 코스를 갖추고 있어 한층 더 운치 있다. 해상 케이블카를 타면 마치<br> 바다 위를
+		  걷는 듯한 느낌이 들며 탁 트인 바다 전망을 감상할 수 있다.<br> 노래 가사에도 나오는 낭만적이고
+		   황홀한 여수의 밤바다는 돌산대교<br>와 음악분수가 함께 어우러져 멋진 야경을 선사한다. 
+		   공식 밥도둑 게장<br>백반과 돌산 갓김치, 갈치조림 등 풍부한 먹거리까지 갖춘 인기 만점 관광지!
 	</p>
 	<input type = "submit" value ="일정만들기">
 
   </div>
+ </div> 
   <div id="map" style="width:500px;height:400px;"></div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ad1993b68723ca5dbb61a8a0398a9525"></script>
 	<script>

@@ -11,11 +11,25 @@
 	p{
 	margin-bottom : 30px;
 	}
+	@font-face {
+   font-family: 'SUIT-ExtraLight';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+}
+ #fonts_in_my_computer {
+    font-family: 'SUIT-ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+ }	
 </style>
 
 
 </head>
 <body>
+<div id="fonts_in_my_computer">
   <div class="wrap">
 	<div style="float: left">
 	<img src="chuncheon.jpg" alt="My Image" width="300" height="300"
@@ -28,14 +42,15 @@
 	<h1>춘천</h1>
 	<h2>Chuncheon</h2><br><br><br>
 	<p>
-		경춘선 청춘열차와 함께 일상 속 한 발짝 더 가까워진 낭만도시 춘천.
-		 춘천의 대표 여행지로 손꼽히는<br> 남이섬은 사계절마다 다채로운 모습으로 늘 새로운 공간을 연출하고,
-		  김유정 작품의 무대가 되었던 <br> 실레마을을 걷다 보면 점순이 등 작품 속 인물들이 마중 나올 것만 같다.
-		   자연 속에 파묻힌 문학과<br> 예술의 숨결을 느끼고 싶다면 춘천 청춘열차에 올라보자..
+		경춘선 청춘열차와 함께 일상 속 한 발짝 더 가까워진 낭만도시 춘천.<br>
+		 춘천의 대표 여행지로 손꼽히는 남이섬은 사계절마다 다채로운 모습으로<br> 늘 새로운 공간을 연출하고,
+		  김유정 작품의 무대가 되었던  실레마을을 걷다<br> 보면 점순이 등 작품 속 인물들이 마중 나올 것만 같다.
+		   자연 속에 파묻힌 문<br>학과 예술의 숨결을 느끼고 싶다면 춘천 청춘열차에 올라보자..
 	</p>
 	<input type = "submit" value ="일정만들기">
 
   </div>
+ </div> 
   <div id="map" style="width:500px;height:400px;"></div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ad1993b68723ca5dbb61a8a0398a9525"></script>
 	<script>
